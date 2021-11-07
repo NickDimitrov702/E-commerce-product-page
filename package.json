@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "E-commerce product page from Front End Mentor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickDimitrov702/Ecommerce-product-page.git"
+  },
+  "keywords": [
+    "ecommerce"
+  ],
+  "author": "Nikolay Dimitrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickDimitrov702/Ecommerce-product-page/issues"
+  },
+  "homepage": "https://github.com/NickDimitrov702/Ecommerce-product-page#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

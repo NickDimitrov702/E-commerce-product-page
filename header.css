@@ -1,0 +1,50 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    max-width: 1440px;
+    flex-basis: auto;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
+.header {
+    border-bottom: 3px solid rgba(128, 128, 128, 0.445);
+}
+
+#logo {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.nav-list {
+    display: flex;
+    flex-grow: 2;
+    font-size: 16;
+    list-style: none;
+    align-items: center;
+    color: gray;
+}
+
+.nav-list li {
+    margin: 20px;
+}
+
+.cart-avatar-wrapper{
+    display: flex;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.cart-avatar-wrapper p {
+    margin: 10px;
+}
+
+#avatar-icon {
+   width: 45px;
+}
+
+#cart {
+    margin-right: 35px;
+}
