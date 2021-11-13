@@ -6,6 +6,7 @@
     max-width: 1350px;
     margin: 100px auto auto auto;
     align-items: flex-start;
+    position:absolute;
 }
 
 
@@ -196,6 +197,106 @@
     margin-right: 10px;
     font-family: 'Kumbh Sans', sans-serif;
     align-items: center;
+}
+
+.checkout{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    float: right;
+    z-index: 10;
+    margin-top: -25px;
+    width: 400px;
+    background-color: white;
+    height: 300px;
+    border-radius: 17px;
+    box-shadow: 3px 23px 47px -11px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 3px 23px 47px -11px rgba(0,0,0,0.61);
+    -moz-box-shadow: 3px 23px 47px -11px rgba(0,0,0,0.61);
+ 
+}
+
+.check-out-header {
+    width: 360px;
+    padding: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(190, 189, 189, 0.288);
+}
+
+.check-out-item-wrapper {
+    margin-top: 25px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#check-out-btn {
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: white;
+    font-weight: 700;
+    flex-direction: row;
+    margin-top: -30px;
+}
+
+.check-out-image {
+    width: 90px;
+    border-radius: 15px;
+    margin-right: 30px;
+   
+}
+
+.check-out-item-info-wrapper{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: -20px;
+
+    
+
+}
+
+.check-out-price-wrapper {
+    margin-top: -25px;
+    align-items: center;
+    display: flex;
+    flex-direction: row ;
+}
+
+.item-price {
+    margin-left: -75px;
+    margin-right: 5px;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: gray;
+}
+
+.item-quantity {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.item-total-price {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+.check-out-item-name {
+    font-size: 20px;
+    color: gray;
+    width: 250px;
 }
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,34 +10,54 @@
     <link rel="stylesheet" href="main.css">
     <title>E-commerce product page</title>
 </head>
+
 <body class="body">
     <header class="header">
         <nav class="nav-bar">
-          <ul class="nav-list">
-              <img id="logo" src="/Resources/imgResources/logo.svg">
-            <li class="nav-list-item">Collection</li>
-            <li class="nav-list-item">Men</li>
-            <li class="nav-list-item">Women</li>
-            <li class="nav-list-item">About</li>
-            <li class="nav-list-item">Contacts</li>
-          </ul>
-          <div class="cart-avatar-wrapper">
-              <img id="cart" src="/Resources/imgResources/icon-cart.svg">
-              <img id="avatar-icon" src="/Resources/imgResources/image-avatar.png">
-          </div>
+            <ul class="nav-list">
+                <img id="logo" src="/Resources/imgResources/logo.svg">
+                <li class="nav-list-item">Collection</li>
+                <li class="nav-list-item">Men</li>
+                <li class="nav-list-item">Women</li>
+                <li class="nav-list-item">About</li>
+                <li class="nav-list-item">Contacts</li>
+            </ul>
+            <div class="cart-avatar-wrapper">
+                <img id="cart" src="/Resources/imgResources/icon-cart.svg">
+                <img id="avatar-icon" src="/Resources/imgResources/image-avatar.png">
+            </div>
         </nav>
-      </header>
-      <div class="main-wrapper">
-        <section class="img-wrapper">
-          <img id='main-img-showcase' src="/Resources//imgResources/image-product-1.jpg">
-          <div class="img-slider">
-            <img class="img-slider-items" src="/Resources/imgResources/image-product-1-thumbnail.jpg">
-            <img class="img-slider-items" src="/Resources/imgResources/image-product-2-thumbnail.jpg">
-            <img class="img-slider-items" src="/Resources/imgResources/image-product-3-thumbnail.jpg">
-            <img class="img-slider-items" src="/Resources/imgResources/image-product-4-thumbnail.jpg">
-          </div>
+        <section class="checkout">
+            <header class="check-out-header">Cart</header>
+            <body>
+                <div class="check-out-item-wrapper">
+                    <div class="image-check-out">
+                        <img class="check-out-image" src="/Resources/imgResources//image-product-1-thumbnail.jpg">
+                    </div>
+                    <div class="check-out-item-info-wrapper">
+                        <p class="check-out-item-name">Fall Limited Editon Sneakers</p>
+                        <div class="check-out-price-wrapper">
+                            <p class="item-price">$123.00</p> x
+                            <p class="item-quantity">3</p>
+                            <p class="item-total-price">$600.00</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="check-out-btn">Checkout</button>
+            </body>
         </section>
-        <section class="item-info-wrapper"> 
+    </header>
+    <div class="main-wrapper">
+        <section class="img-wrapper">
+            <img id='main-img-showcase' src="/Resources//imgResources/image-product-1.jpg">
+            <div class="img-slider">
+                <img class="img-slider-items" src="/Resources/imgResources/image-product-1-thumbnail.jpg">
+                <img class="img-slider-items" src="/Resources/imgResources/image-product-2-thumbnail.jpg">
+                <img class="img-slider-items" src="/Resources/imgResources/image-product-3-thumbnail.jpg">
+                <img class="img-slider-items" src="/Resources/imgResources/image-product-4-thumbnail.jpg">
+            </div>
+        </section>
+        <section class="item-info-wrapper">
             <div class="info-desc-wrapper">
                 <h3>SNEAKERS COMPANY</h3>
                 <h1>Fall Limited Editon Sneakers</h1>
@@ -49,21 +70,24 @@
             <div class="price-add-to-cart-wrapper">
                 <div class="price">
                     <div class="price-discount">
-                        <p class="initial-price">$125.00</p> <p class="discount">50%</p>
+                        <p class="initial-price">$125.00</p>
+                        <p class="discount">50%</p>
                     </div>
                     <p class="old-price">$250.00</p>
                 </div>
                 <div class="add-to-cart">
                     <div id="count-wrapper">
-                        <button  class="count-btn" id='-btn'>-</button><input id='input-counter' value="0"><button class="count-btn" id='+btn'>+</button>
+                        <button class="count-btn" id='-btn'>-</button><input id='input-counter' value="0"><button
+                            class="count-btn" id='+btn'>+</button>
                     </div>
-                    <button id="add-to-cart-btn"><img id="cart-add-button" src="/Resources/imgResources/icon-cart.svg">Add to Cart</button>
+                    <button id="add-to-cart-btn"><img id="cart-add-button"
+                            src="/Resources/imgResources/icon-cart.svg">Add to Cart</button>
                 </div>
             </div>
-
         </section>
-        
-      </div>
-      <script src="source.js"></script>
+
+    </div>
+    <script src="source.js" defer></script>
 </body>
+
 </html>

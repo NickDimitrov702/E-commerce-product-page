@@ -13,24 +13,19 @@ countPlus.addEventListener('click', () => {
 })
 
 countMinus.addEventListener('click', () => {
-    
-    if(counter > 0) {
+
+    if (counter > 0) {
         counter -= 1;
     }
 
     updateDispaly()
 })
 
-function updateDispaly () {
+function updateDispaly() {
     totalCount.value = counter
 }
 
 // Add to Cart Button
 
-let addToCartBtn = document.getElementById('add-to-cart-btn')
 
 
-
-addToCartBtn.addEventListener('click' ,() => {
-
-})
