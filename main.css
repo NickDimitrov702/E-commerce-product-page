@@ -27,6 +27,11 @@
     border-radius: 17px;
 }
 
+.img-slider-items:hover{
+   opacity: 0.5;
+   cursor: pointer;
+}
+
 #main-img-showcase {
     max-width: 500px;
     border-radius: 17px;
@@ -179,6 +184,12 @@
     
 }
 
+#add-to-cart-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  
+}
+
 #cart-add-button {
     color: transparent;
     width: 15px;
@@ -186,4 +197,6 @@
     font-family: 'Kumbh Sans', sans-serif;
     align-items: center;
 }
+
+
 

@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>E-commerce product page</title>
 </head>
 <body class="body">
     <header class="header">
         <nav class="nav-bar">
           <ul class="nav-list">
-              <img id="log" src="/Resources/imgResources/logo.svg">
-            <li>Collection</li>
-            <li>Men</li>
-            <li>Women</li>
-            <li>About</li>
-            <li>Contacts</li>
+              <img id="logo" src="/Resources/imgResources/logo.svg">
+            <li class="nav-list-item">Collection</li>
+            <li class="nav-list-item">Men</li>
+            <li class="nav-list-item">Women</li>
+            <li class="nav-list-item">About</li>
+            <li class="nav-list-item">Contacts</li>
           </ul>
           <div class="cart-avatar-wrapper">
               <img id="cart" src="/Resources/imgResources/icon-cart.svg">
@@ -55,13 +55,15 @@
                 </div>
                 <div class="add-to-cart">
                     <div id="count-wrapper">
-                        <button class="count-btn" id='-btn'>-</button><input id='input-counter' value="0"><button class="count-btn" id='+btn'>+</button>
+                        <button  class="count-btn" id='-btn'>-</button><input id='input-counter' value="0"><button class="count-btn" id='+btn'>+</button>
                     </div>
-                    <button id="add-to-cart-btn"><img id="cart-add-button"  src="/Resources/imgResources/icon-cart.svg">Add to Cart</button>
+                    <button id="add-to-cart-btn"><img id="cart-add-button" src="/Resources/imgResources/icon-cart.svg">Add to Cart</button>
                 </div>
             </div>
 
         </section>
+        
       </div>
+      <script src="source.js"></script>
 </body>
 </html>

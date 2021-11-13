@@ -6,14 +6,19 @@
     align-items: center;
     font-family: 'Kumbh Sans', sans-serif;
     font-weight: 400;
-    
-}
-
-.header {
+    position: relative;
+    height: 70px;
+    margin-top: 20px;
     border-bottom: 3px solid rgba(128, 128, 128, 0.445);
 }
+/* 
+.header {
+  
+} */
 
 #logo {
+    margin-bottom: 30px;
+    margin-right: 20px;
     font-size: 25px;
     font-weight: bolder;
 }
@@ -25,7 +30,9 @@
     list-style: none;
     align-items: center;
     color: gray;
+    position: relative;
 }
+
 
 .nav-list li {
     margin: 20px;
@@ -35,6 +42,7 @@
     display: flex;
     margin-right: 15px;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .cart-avatar-wrapper p {
@@ -45,6 +53,24 @@
    width: 45px;
 }
 
+#avatar-icon:hover{
+    cursor: pointer;
+}
+
 #cart {
     margin-right: 35px;
+}
+#cart:hover {
+    cursor: pointer;
+}
+
+.nav-list-item{
+    height: 60px;
+    /* position: relative; */
+    padding-top: 10px;
+}
+
+.nav-list-item:hover {
+    border-bottom: 5px solid hsl(26, 100%, 55%);
+    cursor: pointer;
 }
