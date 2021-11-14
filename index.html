@@ -23,28 +23,34 @@
                 <li class="nav-list-item">Contacts</li>
             </ul>
             <div class="cart-avatar-wrapper">
-                <img id="cart" src="/Resources/imgResources/icon-cart.svg">
+                <div class="cart-wrapper">
+                    <input id="cart-quantity-indicator" value="0">
+                <img onclick="toogleCart()" id="cart" src="/Resources/imgResources/icon-cart.svg">
+                </div>
                 <img id="avatar-icon" src="/Resources/imgResources/image-avatar.png">
             </div>
         </nav>
-        <section class="checkout">
+        <section id="checkout">
             <header class="check-out-header">Cart</header>
-            <body>
-                <div class="check-out-item-wrapper">
+            <section id="check-out-cart-item-body">
+                <p id="empty-cart-messege">Your cart is empty</p>
+                <div id="check-out-item-wrapper">
                     <div class="image-check-out">
-                        <img class="check-out-image" src="/Resources/imgResources//image-product-1-thumbnail.jpg">
+                        <img id="check-out-image" src="/Resources/imgResources//image-product-1-thumbnail.jpg">
                     </div>
                     <div class="check-out-item-info-wrapper">
                         <p class="check-out-item-name">Fall Limited Editon Sneakers</p>
                         <div class="check-out-price-wrapper">
-                            <p class="item-price">$123.00</p> x
-                            <p class="item-quantity">3</p>
-                            <p class="item-total-price">$600.00</p>
+                            <p id="item-price">$125.00</p> x
+                            <p id="item-quantity"></p>
+                            <p id="item-total-price"></p>
                         </div>
                     </div>
+                    <img id="delete" src="/Resources/imgResources/icon-delete.svg">
                 </div>
                 <button id="check-out-btn">Checkout</button>
-            </body>
+                
+            </section>
         </section>
     </header>
     <div class="main-wrapper">
