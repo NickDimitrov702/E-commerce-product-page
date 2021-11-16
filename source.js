@@ -32,7 +32,7 @@ let checkOutItem = document.getElementById('check-out-item-wrapper')
 checkOutItem.parentNode.removeChild(checkOutItem)
 checkOutBtn.parentNode.removeChild(checkOutBtn)
 // checkOutBody.style.visibility = 'visible'
-
+let thumbNailImage = document.getElementById('img-slider')
 
 updateDispaly()
 
@@ -116,7 +116,25 @@ function itemSelect() {
 
 }
 
-// Add to Cart Button
+thumbNailImage.addEventListener('click', (e) => {
+    e.preventDefault()
+    let slides = document.querySelectorAll('img-slider')
+    console.log(slides)
+    console.log(slides)
+
+    console.log(e.type)
+    if(e.type === 'click') {
+        e.path[0].style = 'border: 3px solid orange; background-color: orange'
+    } 
+
+
+
+})
+
+// function changeStlye(e) {
+//     let divColorChange = document.getElementsByClassName('img-slider-items')
+//     divColorChange[0].style = 'border: 1px solid orange'
+// }
 
 
 
