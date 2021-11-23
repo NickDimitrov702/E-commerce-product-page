@@ -43,18 +43,31 @@
     margin-right: 15px;
     align-items: center;
     margin-bottom: 30px;
+    
 }
 
 .cart-avatar-wrapper p {
     margin: 10px;
+    
+    
 }
 
 #avatar-icon {
    width: 45px;
+   border-radius: 25px;
+
 }
 
 #avatar-icon:hover{
     cursor: pointer;
+    border: 4px solid orange;
+  
+   
+}
+
+.avatar-icon-wrapper {
+    padding: 15px;
+    width: 30px;
 }
 
 #cart {
