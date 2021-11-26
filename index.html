@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="carousel.css">
     <title>E-commerce product page</title>
 </head>
 
-<body class="body">
+<body id="body">
     <header class="header">
         <nav class="nav-bar">
             <ul class="nav-list">
@@ -25,13 +26,33 @@
             <div class="cart-avatar-wrapper">
                 <div class="cart-wrapper">
                     <input id="cart-quantity-indicator" value="0">
-                <img onclick="toogleCart()" id="cart" src="/Resources/imgResources/icon-cart.svg">
+                    <img onclick="toogleCart()" id="cart" src="/Resources/imgResources/icon-cart.svg">
                 </div>
-                <div class="avatar-icon-wrapper"><img id="avatar-icon" src="/Resources/imgResources/image-avatar.png"></div>
-                
+                <div class="avatar-icon-wrapper"><img id="avatar-icon" src="/Resources/imgResources/image-avatar.png">
+                </div>
             </div>
         </nav>
         <section id="checkout">
+            <div id="carousell">
+                <section class="carousell-img-wrapper">
+                    <img  id='carousell-img-showcase' src="/Resources//imgResources/image-product-1.jpg">
+                    <svg id="previous"  width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <path    d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/>
+                    </svg>
+                    <svg id="next" width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd"/>
+                    </svg>
+                    <svg onclick="closeBtn()" id="close-icon" width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill="#69707D" fill-rule="evenodd"/>
+                    </svg>
+                    <div id="carousell-slider">
+                        <img id="1c" class="carousell-slider-items" src="/Resources/imgResources/image-product-1-thumbnail.jpg">
+                        <img id="2c" class="carousell-slider-items" src="/Resources/imgResources/image-product-2-thumbnail.jpg">
+                        <img id="3c" class="carousell-slider-items" src="/Resources/imgResources/image-product-3-thumbnail.jpg">
+                        <img id="4c" class="carousell-slider-items" src="/Resources/imgResources/image-product-4-thumbnail.jpg">
+                    </div>
+                </section>
+            </div>
             <header class="check-out-header">Cart</header>
             <section id="check-out-cart-item-body">
                 <p id="empty-cart-messege">Your cart is empty</p>
@@ -50,13 +71,12 @@
                     <img id="delete" src="/Resources/imgResources/icon-delete.svg">
                 </div>
                 <button id="check-out-btn">Checkout</button>
-                
             </section>
         </section>
     </header>
     <div class="main-wrapper">
         <section class="img-wrapper">
-            <img id='main-img-showcase' src="/Resources//imgResources/image-product-1.jpg">
+            <img onclick="galleryShow()" id='main-img-showcase' src="/Resources//imgResources/image-product-1.jpg">
             <div id="img-slider">
                 <img id='1' class="img-slider-items" src="/Resources/imgResources/image-product-1-thumbnail.jpg">
                 <img id='2' class="img-slider-items" src="/Resources/imgResources/image-product-2-thumbnail.jpg">

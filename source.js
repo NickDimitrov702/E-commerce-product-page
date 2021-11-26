@@ -35,6 +35,12 @@ checkOutBtn.parentNode.removeChild(checkOutBtn)
 let thumbNailImage = document.getElementById('img-slider')
 let mainImageShowCase = document.getElementById('main-img-showcase')
 
+let carousel = document.getElementById('carousell')
+carousel.style.visibility = 'hidden'
+
+let carouselSlider = document.getElementById('carousell-slider')
+let galleryMainImage = document.getElementById('carousell-img-showcase')
+
 updateDispaly()
 
 countPlus.addEventListener('click', () => {
@@ -151,8 +157,9 @@ thumbNailImage.addEventListener('click', (e) => {
         firstImg.style = 'none'
         fourtImg.style = 'none'
         mainImageShowCase.src = './Resources/imgResources/image-product-3.jpg'
+
     } else if (e.type === 'click' && e.target.id === '4') {
-        e.path[0].style = 'border: 3px solid orange; background-color: orange'
+        fourtImg.style = 'border: 3px solid orange; background-color: orange'
         secondImg.style = 'none'
         firstImg.style = 'none'
         thirdImg.style = 'none'
@@ -164,10 +171,64 @@ thumbNailImage.addEventListener('click', (e) => {
 
 })
 
-// function changeStlye(e) {
-//     let divColorChange = document.getElementsByClassName('img-slider-items')
-//     divColorChange[0].style = 'border: 1px solid orange'
-// }
+
+function galleryShow() {
+    let backgroundColor = document.getElementById('body')
+    // backgroundColor.style = 'background-color: rgba(0, 0, 0, 0.308);'
+    console.log(backgroundColor)
+    carousel.style.visibility = 'visible'
+
+    carouselSlider.addEventListener('click',(e) => {
+        
+        let firstImg = document.getElementById('1c')
+        let secondImg = document.getElementById('2c')
+        let thirdImg = document.getElementById('3c')
+        let fourtImg = document.getElementById('4c')
+        e.preventDefault()
+        console.log(e.target.id)
+    
+    
+        console.log(e.type)
+    
+    
+        if (e.type === 'click' && e.target.id === '1c') {
+            firstImg.style = 'border: 3px solid orange; background-color: orange'
+            secondImg.style = 'none'
+            thirdImg.style = 'none'
+            fourtImg.style = 'none'
+            galleryMainImage.src = './Resources/imgResources/image-product-1.jpg'
+        
+        } else if (e.type === 'click' && e.target.id === '2c') {
+            secondImg.style = 'border: 3px solid orange; background-color: orange'
+            firstImg.style = 'none'
+            thirdImg.style = 'none'
+            fourtImg.style = 'none'
+            galleryMainImage.src = './Resources/imgResources/image-product-2.jpg'
+            
+        } else if (e.type === 'click' && e.target.id === '3c') {
+            thirdImg.style = 'border: 3px solid orange; background-color: orange'
+            secondImg.style = 'none'
+            firstImg.style = 'none'
+            fourtImg.style = 'none'
+            galleryMainImage.src = './Resources/imgResources/image-product-3.jpg'
+    
+        } else if (e.type === 'click' && e.target.id === '4c') {
+            fourtImg.style = 'border: 3px solid orange; background-color: orange'
+            secondImg.style = 'none'
+            firstImg.style = 'none'
+            thirdImg.style = 'none'
+            galleryMainImage.src = './Resources/imgResources/image-product-4.jpg'
+    
+        }
+    
+    })
+}
+
+function closeBtn() {
+    carousel.style.visibility = 'hidden'
+    
+}
+
 
 
 
