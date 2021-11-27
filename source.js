@@ -38,8 +38,10 @@ let mainImageShowCase = document.getElementById('main-img-showcase')
 let carousel = document.getElementById('carousell')
 carousel.style.visibility = 'hidden'
 
-let carouselSlider = document.getElementById('carousell-slider')
+let carouselSlider = document.querySelectorAll('.carousell-slider')
 let galleryMainImage = document.getElementById('carousell-img-showcase')
+let nextBtn = document.getElementById('next')
+let previoustBtn = document.getElementById('previous')
 
 updateDispaly()
 
@@ -112,7 +114,7 @@ function cartHider() {
 function toogleCart() {
     if (state === stateHidden) {
         checkOutCart.style.visibility = "visible";
-            
+
         cartShower()
     } else {
         checkOutCart.style.visibility = "hidden"
@@ -143,14 +145,14 @@ thumbNailImage.addEventListener('click', (e) => {
         thirdImg.style = 'none'
         fourtImg.style = 'none'
         mainImageShowCase.src = './Resources/imgResources/image-product-1.jpg'
-    
+
     } else if (e.type === 'click' && e.target.id === '2') {
         secondImg.style = 'border: 3px solid orange; background-color: orange'
         firstImg.style = 'none'
         thirdImg.style = 'none'
         fourtImg.style = 'none'
         mainImageShowCase.src = './Resources/imgResources/image-product-2.jpg'
-        
+
     } else if (e.type === 'click' && e.target.id === '3') {
         thirdImg.style = 'border: 3px solid orange; background-color: orange'
         secondImg.style = 'none'
@@ -175,62 +177,61 @@ thumbNailImage.addEventListener('click', (e) => {
 function galleryShow() {
     let backgroundColor = document.getElementById('body')
     // backgroundColor.style = 'background-color: rgba(0, 0, 0, 0.308);'
-    console.log(backgroundColor)
+    console.log(carouselSlider[0])
     carousel.style.visibility = 'visible'
+    carouselSlider[0].style.display = 'block'
 
-    carouselSlider.addEventListener('click',(e) => {
-        
+    carouselSlider[0].addEventListener('click', (e) => {
+
         let firstImg = document.getElementById('1c')
         let secondImg = document.getElementById('2c')
         let thirdImg = document.getElementById('3c')
         let fourtImg = document.getElementById('4c')
+        firstImg.style = 'border: 3px solid orange; background-color: orange'
+
         e.preventDefault()
         console.log(e.target.id)
-    
-    
+
+
         console.log(e.type)
-    
-    
+
         if (e.type === 'click' && e.target.id === '1c') {
-            firstImg.style = 'border: 3px solid orange; background-color: orange'
+
             secondImg.style = 'none'
             thirdImg.style = 'none'
             fourtImg.style = 'none'
             galleryMainImage.src = './Resources/imgResources/image-product-1.jpg'
-        
+
         } else if (e.type === 'click' && e.target.id === '2c') {
             secondImg.style = 'border: 3px solid orange; background-color: orange'
             firstImg.style = 'none'
             thirdImg.style = 'none'
             fourtImg.style = 'none'
             galleryMainImage.src = './Resources/imgResources/image-product-2.jpg'
-            
+
         } else if (e.type === 'click' && e.target.id === '3c') {
             thirdImg.style = 'border: 3px solid orange; background-color: orange'
             secondImg.style = 'none'
             firstImg.style = 'none'
             fourtImg.style = 'none'
             galleryMainImage.src = './Resources/imgResources/image-product-3.jpg'
-    
+
         } else if (e.type === 'click' && e.target.id === '4c') {
             fourtImg.style = 'border: 3px solid orange; background-color: orange'
             secondImg.style = 'none'
             firstImg.style = 'none'
             thirdImg.style = 'none'
             galleryMainImage.src = './Resources/imgResources/image-product-4.jpg'
-    
+
         }
-    
+
     })
 }
 
 function closeBtn() {
     carousel.style.visibility = 'hidden'
-    
+
 }
-
-
-
 
 
 
